@@ -91,6 +91,9 @@ it is not included in the user's column subset." />
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
+      <a href="../articles/AgeFromStage.html">Age-from-stage analyses</a>
+    </li>
+    <li>
       <a href="../articles/GettingStarted.html">Getting Started with Rcompadre</a>
     </li>
     <li>
@@ -181,85 +184,85 @@ subset(x, subset, select, drop = FALSE, ...)</pre>
     <pre class="examples"><div class='input'><span class='co'># subset to the first 10 rows</span>
 <span class='no'>Compadre</span>[<span class='fl'>1</span>:<span class='fl'>10</span>,]</div><div class='output co'>#&gt; A COM(P)ADRE database ('CompadreDB') object with 10 SPECIES and 10 MATRICES.
 #&gt; 
-#&gt; # A tibble: 10 x 48
+#&gt; <span style='color: #555555;'># A tibble: 10 x 48</span><span>
 #&gt;    mat   SpeciesAuthor SpeciesAccepted CommonName Genus Family Order Class
-#&gt;    &lt;lis&gt; &lt;chr&gt;         &lt;chr&gt;           &lt;chr&gt;      &lt;chr&gt; &lt;fct&gt;  &lt;fct&gt; &lt;fct&gt;
-#&gt;  1 &lt;S4:… Setaria_incr… Setaria incras… &lt;NA&gt;       Seta… Poace… Poal… Lili…
-#&gt;  2 &lt;S4:… Lechea_cernua Lechea cernua   &lt;NA&gt;       Lech… Cista… Malv… Magn…
-#&gt;  3 &lt;S4:… Actinostemon… Actinostemon c… &lt;NA&gt;       Acti… Eupho… Malp… Magn…
-#&gt;  4 &lt;S4:… Gaura_neomex… Gaura neomexic… &lt;NA&gt;       Gaura Onagr… Myrt… Magn…
-#&gt;  5 &lt;S4:… Eriogonum_lo… Eriogonum long… Buckwheat  Erio… Polyg… Cary… Magn…
-#&gt;  6 &lt;S4:… Platanthera_… Platanthera ho… &lt;NA&gt;       Plat… Orchi… Aspa… Lili…
-#&gt;  7 &lt;S4:… Succisa_prat… Succisa praten… &lt;NA&gt;       Succ… Capri… Dips… Magn…
-#&gt;  8 &lt;S4:… Haplopappus_… Pyrrocoma radi… &lt;NA&gt;       Pyrr… Compo… Aste… Magn…
-#&gt;  9 &lt;S4:… Astragalus_t… Astragalus tre… &lt;NA&gt;       Astr… Legum… Faba… Magn…
-#&gt; 10 &lt;S4:… Plantago_cor… Plantago coron… &lt;NA&gt;       Plan… Plant… Lami… Magn…
-#&gt; # ... with 40 more variables: Phylum &lt;fct&gt;, Kingdom &lt;fct&gt;, OrganismType &lt;fct&gt;,
-#&gt; #   DicotMonoc &lt;fct&gt;, AngioGymno &lt;fct&gt;, Authors &lt;chr&gt;, Journal &lt;chr&gt;,
-#&gt; #   YearPublication &lt;chr&gt;, DOI.ISBN &lt;chr&gt;, AdditionalSource &lt;chr&gt;,
-#&gt; #   StudyDuration &lt;dbl&gt;, StudyStart &lt;dbl&gt;, StudyEnd &lt;dbl&gt;,
-#&gt; #   AnnualPeriodicity &lt;chr&gt;, NumberPopulations &lt;dbl&gt;, MatrixCriteriaSize &lt;fct&gt;,
-#&gt; #   MatrixCriteriaOntogeny &lt;fct&gt;, MatrixCriteriaAge &lt;fct&gt;,
-#&gt; #   MatrixPopulation &lt;chr&gt;, Lat &lt;dbl&gt;, Lon &lt;dbl&gt;, Altitude &lt;dbl&gt;,
-#&gt; #   Country &lt;fct&gt;, Continent &lt;fct&gt;, Ecoregion &lt;chr&gt;, StudiedSex &lt;fct&gt;,
-#&gt; #   MatrixComposite &lt;fct&gt;, MatrixTreatment &lt;chr&gt;, MatrixCaptivity &lt;fct&gt;,
-#&gt; #   MatrixStartYear &lt;dbl&gt;, MatrixStartSeason &lt;fct&gt;, MatrixStartMonth &lt;chr&gt;,
-#&gt; #   MatrixEndYear &lt;dbl&gt;, MatrixEndSeason &lt;fct&gt;, MatrixEndMonth &lt;chr&gt;,
-#&gt; #   MatrixSplit &lt;fct&gt;, MatrixFec &lt;fct&gt;, Observation &lt;fct&gt;,
-#&gt; #   MatrixDimension &lt;dbl&gt;, SurvivalIssue &lt;dbl&gt;</div><div class='input'>
+#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;lis&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>         </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>           </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>
+#&gt; </span><span style='color: #555555;'> 1</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Setaria_incr… Setaria incras… </span><span style='color: #BB0000;'>NA</span><span>         Seta… Poace… Poal… Lili…
+#&gt; </span><span style='color: #555555;'> 2</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Lechea_cernua Lechea cernua   </span><span style='color: #BB0000;'>NA</span><span>         Lech… Cista… Malv… Magn…
+#&gt; </span><span style='color: #555555;'> 3</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Actinostemon… Actinostemon c… </span><span style='color: #BB0000;'>NA</span><span>         Acti… Eupho… Malp… Magn…
+#&gt; </span><span style='color: #555555;'> 4</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Gaura_neomex… Gaura neomexic… </span><span style='color: #BB0000;'>NA</span><span>         Gaura Onagr… Myrt… Magn…
+#&gt; </span><span style='color: #555555;'> 5</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Eriogonum_lo… Eriogonum long… Buckwheat  Erio… Polyg… Cary… Magn…
+#&gt; </span><span style='color: #555555;'> 6</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Platanthera_… Platanthera ho… </span><span style='color: #BB0000;'>NA</span><span>         Plat… Orchi… Aspa… Lili…
+#&gt; </span><span style='color: #555555;'> 7</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Succisa_prat… Succisa praten… </span><span style='color: #BB0000;'>NA</span><span>         Succ… Capri… Dips… Magn…
+#&gt; </span><span style='color: #555555;'> 8</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Haplopappus_… Pyrrocoma radi… </span><span style='color: #BB0000;'>NA</span><span>         Pyrr… Compo… Aste… Magn…
+#&gt; </span><span style='color: #555555;'> 9</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Astragalus_t… Astragalus tre… </span><span style='color: #BB0000;'>NA</span><span>         Astr… Legum… Faba… Magn…
+#&gt; </span><span style='color: #555555;'>10</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Plantago_cor… Plantago coron… </span><span style='color: #BB0000;'>NA</span><span>         Plan… Plant… Lami… Magn…
+#&gt; </span><span style='color: #555555;'># … with 40 more variables: Phylum </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, Kingdom </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, OrganismType </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
+#&gt; #   DicotMonoc </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, AngioGymno </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, Authors </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, Journal </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
+#&gt; #   YearPublication </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, DOI.ISBN </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, AdditionalSource </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
+#&gt; #   StudyDuration </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, StudyStart </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, StudyEnd </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
+#&gt; #   AnnualPeriodicity </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, NumberPopulations </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, MatrixCriteriaSize </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
+#&gt; #   MatrixCriteriaOntogeny </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, MatrixCriteriaAge </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
+#&gt; #   MatrixPopulation </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, Lat </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, Lon </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, Altitude </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
+#&gt; #   Country </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, Continent </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, Ecoregion </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, StudiedSex </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
+#&gt; #   MatrixComposite </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, MatrixTreatment </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, MatrixCaptivity </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
+#&gt; #   MatrixStartYear </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, MatrixStartSeason </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, MatrixStartMonth </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
+#&gt; #   MatrixEndYear </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, MatrixEndSeason </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, MatrixEndMonth </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
+#&gt; #   MatrixSplit </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, MatrixFec </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, Observation </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
+#&gt; #   MatrixDimension </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, SurvivalIssue </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
 <span class='co'># subset to the species 'Echinacea angustifolia'</span>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/subset'>subset</a></span>(<span class='no'>Compadre</span>, <span class='no'>SpeciesAccepted</span> <span class='kw'>==</span> <span class='st'>"Echinacea angustifolia"</span>)</div><div class='output co'>#&gt; A COM(P)ADRE database ('CompadreDB') object with 1 SPECIES and 4 MATRICES.
 #&gt; 
-#&gt; # A tibble: 4 x 48
+#&gt; </span><span style='color: #555555;'># A tibble: 4 x 48</span><span>
 #&gt;   mat   SpeciesAuthor SpeciesAccepted CommonName Genus Family Order Class Phylum
-#&gt;   &lt;lis&gt; &lt;chr&gt;         &lt;chr&gt;           &lt;chr&gt;      &lt;chr&gt; &lt;fct&gt;  &lt;fct&gt; &lt;fct&gt; &lt;fct&gt; 
-#&gt; 1 &lt;S4:… Echinacea_an… Echinacea angu… Narrow-le… Echi… Compo… Aste… Magn… Magno…
-#&gt; 2 &lt;S4:… Echinacea_an… Echinacea angu… Narrow-le… Echi… Compo… Aste… Magn… Magno…
-#&gt; 3 &lt;S4:… Echinacea_an… Echinacea angu… Narrow-le… Echi… Compo… Aste… Magn… Magno…
-#&gt; 4 &lt;S4:… Echinacea_an… Echinacea angu… Narrow-le… Echi… Compo… Aste… Magn… Magno…
-#&gt; # ... with 39 more variables: Kingdom &lt;fct&gt;, OrganismType &lt;fct&gt;,
-#&gt; #   DicotMonoc &lt;fct&gt;, AngioGymno &lt;fct&gt;, Authors &lt;chr&gt;, Journal &lt;chr&gt;,
-#&gt; #   YearPublication &lt;chr&gt;, DOI.ISBN &lt;chr&gt;, AdditionalSource &lt;chr&gt;,
-#&gt; #   StudyDuration &lt;dbl&gt;, StudyStart &lt;dbl&gt;, StudyEnd &lt;dbl&gt;,
-#&gt; #   AnnualPeriodicity &lt;chr&gt;, NumberPopulations &lt;dbl&gt;, MatrixCriteriaSize &lt;fct&gt;,
-#&gt; #   MatrixCriteriaOntogeny &lt;fct&gt;, MatrixCriteriaAge &lt;fct&gt;,
-#&gt; #   MatrixPopulation &lt;chr&gt;, Lat &lt;dbl&gt;, Lon &lt;dbl&gt;, Altitude &lt;dbl&gt;,
-#&gt; #   Country &lt;fct&gt;, Continent &lt;fct&gt;, Ecoregion &lt;chr&gt;, StudiedSex &lt;fct&gt;,
-#&gt; #   MatrixComposite &lt;fct&gt;, MatrixTreatment &lt;chr&gt;, MatrixCaptivity &lt;fct&gt;,
-#&gt; #   MatrixStartYear &lt;dbl&gt;, MatrixStartSeason &lt;fct&gt;, MatrixStartMonth &lt;chr&gt;,
-#&gt; #   MatrixEndYear &lt;dbl&gt;, MatrixEndSeason &lt;fct&gt;, MatrixEndMonth &lt;chr&gt;,
-#&gt; #   MatrixSplit &lt;fct&gt;, MatrixFec &lt;fct&gt;, Observation &lt;fct&gt;,
-#&gt; #   MatrixDimension &lt;dbl&gt;, SurvivalIssue &lt;dbl&gt;</div><div class='input'>
+#&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;lis&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>         </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>           </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span> 
+#&gt; </span><span style='color: #555555;'>1</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Echinacea_an… Echinacea angu… Narrow-le… Echi… Compo… Aste… Magn… Magno…
+#&gt; </span><span style='color: #555555;'>2</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Echinacea_an… Echinacea angu… Narrow-le… Echi… Compo… Aste… Magn… Magno…
+#&gt; </span><span style='color: #555555;'>3</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Echinacea_an… Echinacea angu… Narrow-le… Echi… Compo… Aste… Magn… Magno…
+#&gt; </span><span style='color: #555555;'>4</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Echinacea_an… Echinacea angu… Narrow-le… Echi… Compo… Aste… Magn… Magno…
+#&gt; </span><span style='color: #555555;'># … with 39 more variables: Kingdom </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, OrganismType </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
+#&gt; #   DicotMonoc </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, AngioGymno </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, Authors </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, Journal </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
+#&gt; #   YearPublication </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, DOI.ISBN </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, AdditionalSource </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
+#&gt; #   StudyDuration </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, StudyStart </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, StudyEnd </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
+#&gt; #   AnnualPeriodicity </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, NumberPopulations </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, MatrixCriteriaSize </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
+#&gt; #   MatrixCriteriaOntogeny </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, MatrixCriteriaAge </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
+#&gt; #   MatrixPopulation </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, Lat </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, Lon </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, Altitude </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
+#&gt; #   Country </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, Continent </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, Ecoregion </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, StudiedSex </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
+#&gt; #   MatrixComposite </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, MatrixTreatment </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, MatrixCaptivity </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
+#&gt; #   MatrixStartYear </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, MatrixStartSeason </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, MatrixStartMonth </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
+#&gt; #   MatrixEndYear </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, MatrixEndSeason </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, MatrixEndMonth </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
+#&gt; #   MatrixSplit </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, MatrixFec </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, Observation </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
+#&gt; #   MatrixDimension </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, SurvivalIssue </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
 <span class='co'># remove the column SurvivalIssue</span>
 <span class='no'>Compadre</span>[,<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/names'>names</a></span>(<span class='no'>Compadre</span>) <span class='kw'>!=</span> <span class='st'>"SurvivalIssue"</span>]</div><div class='output co'>#&gt; A COM(P)ADRE database ('CompadreDB') object with 110 SPECIES and 150 MATRICES.
 #&gt; 
-#&gt; # A tibble: 150 x 47
+#&gt; </span><span style='color: #555555;'># A tibble: 150 x 47</span><span>
 #&gt;    mat   SpeciesAuthor SpeciesAccepted CommonName Genus Family Order Class
-#&gt;    &lt;lis&gt; &lt;chr&gt;         &lt;chr&gt;           &lt;chr&gt;      &lt;chr&gt; &lt;fct&gt;  &lt;fct&gt; &lt;fct&gt;
-#&gt;  1 &lt;S4:… Setaria_incr… Setaria incras… &lt;NA&gt;       Seta… Poace… Poal… Lili…
-#&gt;  2 &lt;S4:… Lechea_cernua Lechea cernua   &lt;NA&gt;       Lech… Cista… Malv… Magn…
-#&gt;  3 &lt;S4:… Actinostemon… Actinostemon c… &lt;NA&gt;       Acti… Eupho… Malp… Magn…
-#&gt;  4 &lt;S4:… Gaura_neomex… Gaura neomexic… &lt;NA&gt;       Gaura Onagr… Myrt… Magn…
-#&gt;  5 &lt;S4:… Eriogonum_lo… Eriogonum long… Buckwheat  Erio… Polyg… Cary… Magn…
-#&gt;  6 &lt;S4:… Platanthera_… Platanthera ho… &lt;NA&gt;       Plat… Orchi… Aspa… Lili…
-#&gt;  7 &lt;S4:… Succisa_prat… Succisa praten… &lt;NA&gt;       Succ… Capri… Dips… Magn…
-#&gt;  8 &lt;S4:… Haplopappus_… Pyrrocoma radi… &lt;NA&gt;       Pyrr… Compo… Aste… Magn…
-#&gt;  9 &lt;S4:… Astragalus_t… Astragalus tre… &lt;NA&gt;       Astr… Legum… Faba… Magn…
-#&gt; 10 &lt;S4:… Plantago_cor… Plantago coron… &lt;NA&gt;       Plan… Plant… Lami… Magn…
-#&gt; # ... with 140 more rows, and 39 more variables: Phylum &lt;fct&gt;, Kingdom &lt;fct&gt;,
-#&gt; #   OrganismType &lt;fct&gt;, DicotMonoc &lt;fct&gt;, AngioGymno &lt;fct&gt;, Authors &lt;chr&gt;,
-#&gt; #   Journal &lt;chr&gt;, YearPublication &lt;chr&gt;, DOI.ISBN &lt;chr&gt;,
-#&gt; #   AdditionalSource &lt;chr&gt;, StudyDuration &lt;dbl&gt;, StudyStart &lt;dbl&gt;,
-#&gt; #   StudyEnd &lt;dbl&gt;, AnnualPeriodicity &lt;chr&gt;, NumberPopulations &lt;dbl&gt;,
-#&gt; #   MatrixCriteriaSize &lt;fct&gt;, MatrixCriteriaOntogeny &lt;fct&gt;,
-#&gt; #   MatrixCriteriaAge &lt;fct&gt;, MatrixPopulation &lt;chr&gt;, Lat &lt;dbl&gt;, Lon &lt;dbl&gt;,
-#&gt; #   Altitude &lt;dbl&gt;, Country &lt;fct&gt;, Continent &lt;fct&gt;, Ecoregion &lt;chr&gt;,
-#&gt; #   StudiedSex &lt;fct&gt;, MatrixComposite &lt;fct&gt;, MatrixTreatment &lt;chr&gt;,
-#&gt; #   MatrixCaptivity &lt;fct&gt;, MatrixStartYear &lt;dbl&gt;, MatrixStartSeason &lt;fct&gt;,
-#&gt; #   MatrixStartMonth &lt;chr&gt;, MatrixEndYear &lt;dbl&gt;, MatrixEndSeason &lt;fct&gt;,
-#&gt; #   MatrixEndMonth &lt;chr&gt;, MatrixSplit &lt;fct&gt;, MatrixFec &lt;fct&gt;,
-#&gt; #   Observation &lt;fct&gt;, MatrixDimension &lt;dbl&gt;</div><div class='input'>
-</div><span class='co'># NOT RUN {</span>
+#&gt;    </span><span style='color: #555555;font-style: italic;'>&lt;lis&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>         </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>           </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>      </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>  </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span> </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span>
+#&gt; </span><span style='color: #555555;'> 1</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Setaria_incr… Setaria incras… </span><span style='color: #BB0000;'>NA</span><span>         Seta… Poace… Poal… Lili…
+#&gt; </span><span style='color: #555555;'> 2</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Lechea_cernua Lechea cernua   </span><span style='color: #BB0000;'>NA</span><span>         Lech… Cista… Malv… Magn…
+#&gt; </span><span style='color: #555555;'> 3</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Actinostemon… Actinostemon c… </span><span style='color: #BB0000;'>NA</span><span>         Acti… Eupho… Malp… Magn…
+#&gt; </span><span style='color: #555555;'> 4</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Gaura_neomex… Gaura neomexic… </span><span style='color: #BB0000;'>NA</span><span>         Gaura Onagr… Myrt… Magn…
+#&gt; </span><span style='color: #555555;'> 5</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Eriogonum_lo… Eriogonum long… Buckwheat  Erio… Polyg… Cary… Magn…
+#&gt; </span><span style='color: #555555;'> 6</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Platanthera_… Platanthera ho… </span><span style='color: #BB0000;'>NA</span><span>         Plat… Orchi… Aspa… Lili…
+#&gt; </span><span style='color: #555555;'> 7</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Succisa_prat… Succisa praten… </span><span style='color: #BB0000;'>NA</span><span>         Succ… Capri… Dips… Magn…
+#&gt; </span><span style='color: #555555;'> 8</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Haplopappus_… Pyrrocoma radi… </span><span style='color: #BB0000;'>NA</span><span>         Pyrr… Compo… Aste… Magn…
+#&gt; </span><span style='color: #555555;'> 9</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Astragalus_t… Astragalus tre… </span><span style='color: #BB0000;'>NA</span><span>         Astr… Legum… Faba… Magn…
+#&gt; </span><span style='color: #555555;'>10</span><span> </span><span style='color: #555555;'>&lt;Com</span><span>… Plantago_cor… Plantago coron… </span><span style='color: #BB0000;'>NA</span><span>         Plan… Plant… Lami… Magn…
+#&gt; </span><span style='color: #555555;'># … with 140 more rows, and 39 more variables: Phylum </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, Kingdom </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
+#&gt; #   OrganismType </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, DicotMonoc </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, AngioGymno </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, Authors </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
+#&gt; #   Journal </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, YearPublication </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, DOI.ISBN </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
+#&gt; #   AdditionalSource </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, StudyDuration </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, StudyStart </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
+#&gt; #   StudyEnd </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, AnnualPeriodicity </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, NumberPopulations </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
+#&gt; #   MatrixCriteriaSize </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, MatrixCriteriaOntogeny </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
+#&gt; #   MatrixCriteriaAge </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, MatrixPopulation </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, Lat </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, Lon </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,
+#&gt; #   Altitude </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, Country </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, Continent </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, Ecoregion </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
+#&gt; #   StudiedSex </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, MatrixComposite </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, MatrixTreatment </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,
+#&gt; #   MatrixCaptivity </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, MatrixStartYear </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, MatrixStartSeason </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
+#&gt; #   MatrixStartMonth </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, MatrixEndYear </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, MatrixEndSeason </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
+#&gt; #   MatrixEndMonth </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, MatrixSplit </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, MatrixFec </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>,
+#&gt; #   Observation </span><span style='color: #555555;font-style: italic;'>&lt;fct&gt;</span><span style='color: #555555;'>, MatrixDimension </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span></div><div class='input'>
+</div></span><span class='co'># NOT RUN {</span>
 <span class='co'># column selection doesn't include mat, but mat will still be returned with a</span>
 <span class='co'>#  along with a warning</span>
 <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/subset'>subset</a></span>(<span class='no'>Compadre</span>, <span class='kw'>select</span> <span class='kw'>=</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='st'>"SpeciesAccepted"</span>, <span class='st'>"Authors"</span>))
@@ -278,7 +281,7 @@ subset(x, subset, select, drop = FALSE, ...)</pre>
 
       <footer>
       <div class="copyright">
-  <p>Developed by Owen Jones.</p>
+  <p>Developed by Patrick Barks, Danny Buss, Roberto Salguero-Gomez, Iain Stott, Tamora James, Owen Jones, Julia Jones.</p>
 </div>
 
 <div class="pkgdown">
